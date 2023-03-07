@@ -22,6 +22,17 @@ Once the API is running, you can access the tts webinterface at http://localhost
 ```bash
 pip install -r requirements.txt
 ```
+**env file**
+
+```bash
+cp .env.example .env
+```
+**Edit .env file**
+
+```bash
+DOMAIN_URL=http://localhost:8000 or your domain
+```
+
 
 ## Run
 
