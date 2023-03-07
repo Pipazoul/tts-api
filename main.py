@@ -12,6 +12,11 @@ from dotenv import load_dotenv
 
 app = FastAPI()
 
+# check if static folder exists
+if not os.path.exists("static"):
+    os.makedirs("static")
+
+
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 ## Domain url from .env file using python-dotenv or os.environ
